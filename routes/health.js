@@ -5,7 +5,7 @@ router.get("/health", (req, res) => {
     res.json({
         status: "Running"
     })
-});
+})
 
 module.exports = {
     router

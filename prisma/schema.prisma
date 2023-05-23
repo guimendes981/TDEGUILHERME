@@ -11,14 +11,21 @@ datasource db {
 }
 
 model products {
-  id    Int     @id @default(autoincrement())
-  name  String
-  price Decimal
+  id Int @id @default(autoincrement())
+  name String 
+  price Decimal 
+}
+
+model tasks {
+  id Int @id @default(autoincrement())
+  nome String
+  descricao String
+  isDone Boolean
 }
 
 model users {
-  id       Int    @id @default(autoincrement())
-  name     String
-  email    String @unique
+  id Int @id @default(autoincrement())
+  name String
+  email String @unique
   password String
 }
